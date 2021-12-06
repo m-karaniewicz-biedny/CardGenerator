@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d782f5945464e498774060227a2747, type: 3}
+  m_Name: Card Generation Data
+  m_EditorClassIdentifier: 
+  cardTitles:
+  - Phaleg
+  - Israfel
+  - Tabbris
+  - Elijah
+  - Malchediel
+  cardDescriptions:
+  - The fish listened intently to what the frogs had to say. The manager of the fruit
+    stand always sat and only sold vegetables.
+  - It turns out you don't need all that stuff you insisted you did. The tattered
+    work gloves speak of the many hours of hard labor he endured throughout his life.
+  - He's in a boy band which doesn't make much sense for a snake. She advised him
+    to come back at once.
+  - Eating eggs on Thursday for choir practice was recommended. Nobody has encountered
+    an explosive daisy and lived to tell the tale.
+  - The shark-infested South Pine channel was the only way in or out. She let the
+    balloon float up into the air with her hopes and dreams.
+  cardImages:
+  - {fileID: 21300000, guid: a49d8b7ca5841bb409721521683fded8, type: 3}
+  - {fileID: 21300000, guid: 7b26c70a5df9edf49b8d84b2f373f671, type: 3}
+  - {fileID: 21300000, guid: cc85cd5423af94647a3968b8289df3d7, type: 3}
+  - {fileID: 21300000, guid: c38a918e3566f814f94eedc73587fca3, type: 3}
+  - {fileID: 21300000, guid: 9f113b80b69555a4ab6a1d96961af7a3, type: 3}
+  - {fileID: 21300000, guid: 2a0db6ab3e85f4c4b9108db3337d5255, type: 3}
+  cardEffects:
+  - {fileID: 11400000, guid: 0294e73fe580c814ca1f1c389d8d714b, type: 2}
+  - {fileID: 11400000, guid: 215d9e2865ae21743a297a644eb4f990, type: 2}
+  - {fileID: 11400000, guid: e039796df314843428d693a56895db43, type: 2}
+  - {fileID: 11400000, guid: 46793a5ca7d1f6d43bf13f7f260b2620, type: 2}
+  - {fileID: 11400000, guid: 9b892ef0c7c9d374ab02335e931a7d3b, type: 2}
