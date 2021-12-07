@@ -1,7 +1,6 @@
 using UnityEngine;
 using System;
 
-
 public class CardManager : MonoBehaviour
 {
     [SerializeField] CardGenerationDataAsset cardGenerationData;

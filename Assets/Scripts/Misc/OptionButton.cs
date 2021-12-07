@@ -23,7 +23,4 @@ public class OptionButton : MonoBehaviour
     {
         ButtonName = name;
     }
-
-
-
 }

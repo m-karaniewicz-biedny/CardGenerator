@@ -4,7 +4,7 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-public class CardSaveLoad
+public static class CardSaveLoad
 {
     const string CARD_FILE_PREFIX = "SavedCard";
 
@@ -43,6 +43,12 @@ public class CardSaveLoad
         return loadableFilesPaths.ToArray();
     }
 
+    public static void DeleteAllCardJSONFiles()
+    {
+        string[] paths = GetLoadableCardJSONFilePaths();
+
+        for (int i = 0; i < paths.Length; i++) File.Delete(paths[i]);
+    }
 
     #endregion
 
@@ -50,8 +56,7 @@ public class CardSaveLoad
 
     //Save CardData as CardGenerationData indexes
     //Limitation: providing a modified CardGenerationDataAsset when loading will result in incorrect loading.
-    //To correctly load CardGenerationDataAsset has to be identical to when the file was saved.
-    //TODO: Fix this or use a different approach.
+    //To correctly load, CardGenerationDataAsset has to be identical to when the file was saved.
     public static void SaveCardDataToFileWithIndexes(CardData cardData, CardGenerationDataAsset cardGenerationData)
     {
         string path = $"{Application.persistentDataPath}/{CARD_FILE_PREFIX}_{System.DateTime.Now.ToString("yyyy-MM-dd_HH_mm_ss_ffff")}.card";

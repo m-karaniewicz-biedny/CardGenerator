@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using System;
-using TMPro;
 
 public class UIManager : MonoBehaviour
 {
@@ -43,6 +41,18 @@ public class UIManager : MonoBehaviour
     private void OnEnable()
     {
         CardManager.RequestLoadOption += CreateLoadOption;
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+            Application.Quit();
+#endif
+        }
     }
 
     private void GenerateButtonClick() => OnGenerateButtonClick?.Invoke();

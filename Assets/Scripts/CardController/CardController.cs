@@ -1,17 +1,14 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CardDisplay))]
+[RequireComponent(typeof(CardControllerDisplay))]
 public class CardController : MonoBehaviour
 {
     CardData _currentCard;
-    CardDisplay _cardDisplay;
+    CardControllerDisplay _cardDisplay;
 
     private void Awake()
     {
-        _cardDisplay = GetComponent<CardDisplay>();
+        _cardDisplay = GetComponent<CardControllerDisplay>();
         if (_cardDisplay == null) Debug.LogError("Missing card display");
         CurrentCard = new CardData();
     }
